@@ -2,8 +2,31 @@
     width: 120px;
     height: 120px;
     background: #0098c2;
+    margin: 120px auto;
 }
 body {
+    text-align: center;
     background: #296752; /* Цвет фона */
     color: #fc0; /* Цвет текста */
 }
+div#square {
+    animation: 1s linear 0s normal none infinite running rot;
+    -webkit-animation: 1s linear 0s normal none infinite running rot;
+    width: 120px;
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
