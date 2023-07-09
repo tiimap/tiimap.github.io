@@ -3,3 +3,7 @@
     height: 120px;
     background: #0098c2;
 }
+body {
+    background: #296752; /* Цвет фона */
+    color: #fc0; /* Цвет текста */
+}
