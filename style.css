@@ -1,15 +1,25 @@
-#square {
+.square {
     width: 120px;
     height: 120px;
     background: #0098c2;
-    margin: 120px auto;
+    margin: 400px auto;
 }
-body {
+/* body {
     text-align: center;
     background: #296752; /* Цвет фона */
-    color: #fc0; /* Цвет текста */
+    /* color: #fc0; Цвет текста */
+/* } */
+html {
+  background-image: url(img/volk_siluet_holmy.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-div#square {
+.rotate {
     animation: 1s linear 0s normal none infinite running rot;
     -webkit-animation: 1s linear 0s normal none infinite running rot;
     width: 120px;
@@ -30,3 +40,26 @@ div#square {
       transform: rotate(360deg);
     }
   }
+
+.rotate_around{
+/* ::before{ */
+
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  /* margin: auto; */
+  /* background: #EF6868; */
+  animation: moveAround 3s linear infinite;
+  
+}
+
+@keyframes moveAround {
+  from {
+    transform: rotate(0deg) translate(200px);
+  }
+  to {
+    transform: rotate(360deg) translate(200px);
+  }
+}
